@@ -150,13 +150,13 @@ else {
 
 		$sql = "SELECT * FROM participants ORDER BY num DESC LIMIT 1";
 		$result = mysqli_query($conn, $sql);
-		var_dump($result);
 		while($row = mysqli_fetch_assoc($result)){
 			$_SESSION['timestamp'] = $row['timestamp'];
 		}
 	}
 
-	header('Location: ../results.php');
+	header('Location:../results.php');
+	exit();
 }
 
 ?>
