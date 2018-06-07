@@ -1,0 +1,37 @@
+/*Font(Droid-Sans)*/
+@font-face {
+	font-family: "Droid Sans";
+	src: url("../fonts/DroidSans.ttf") format("truetype");
+	font-weight: normal;
+}
+@font-face {
+	font-family: "Droid Sans";
+	src:url("../fonts/DroidSans-Bold.ttf") format("truetype");
+	font-weight: bold;
+}
+body {
+	font-family: "Droid Sans", Arial, sans-serif;
+}
+
+/*Navbar*/
+.navbar {
+	box-shadow: 2px 0px 4px lightgray;
+}
+.logo {
+	margin: 20px 0;
+	height:50px;
+}
+.nav-item > a {
+	font-size: 14px;
+	font-weight: bold;
+}
+.nav-item > a:hover {
+	color: #0e76bc !important;
+}
+@media only screen and (max-width: 320px) {
+    .logo {
+        height: 30px;
+    }
+}
+
+

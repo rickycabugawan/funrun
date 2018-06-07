@@ -1,0 +1,40 @@
+hr {
+    border-top: 2px solid darkgrey;
+}
+
+/*Main*/
+.main {
+	background-image: url("../images/background.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center bottom;
+	min-height: 550px;
+}
+.main-box {
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+	grid-gap: 25px;
+}
+
+/*Sidebar*/
+.sidebar {
+	grid-column: 1 / span 1;
+}
+.dashboard-table {
+	grid-column: span 1 / -1;
+}
+.export-btn {
+	background-color: lightgrey;
+}
+
+/*Table*/
+.total-bar {
+	font-size: 20px;
+}
+.filter-box {
+	font-weight: bold;
+}
+.pagination > .page-item > a {
+	color: #000;
+}
+

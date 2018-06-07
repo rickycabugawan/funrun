@@ -1,0 +1,164 @@
+/*Header*/
+.inner {
+	display: grid;
+	justify-items: center;
+}
+.header {
+	background-image: url("../images/background.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center bottom;
+	height: calc(100vh - 100px);
+	min-height: 550px;
+	/*padding-top: 5%;*/
+	padding-bottom: 10%;
+	display: grid;
+	align-content: center;
+}
+.camp-desc,
+.reg-fee {
+	font-size: 15px;
+}
+.evt-details {
+	font-size: 18px;
+}
+.register-btn {
+	border: 3px solid #39b54a;
+	font-size: 14px;
+	font-weight: bold;
+	color: #0e76bc;
+	padding: 5px 30px;
+}
+
+/*Main*/
+.main {
+	/*height: calc(100vh - 100px);*/
+	min-height: calc(100vh - 100px);
+	background-color: #0068ac;
+	display: grid;
+	align-content: center;
+}
+@media only screen and (max-width: 767px) {
+    .main { 
+    	height: auto;
+    }
+}
+.sec-title {
+	font-size: 30px;
+	font-weight: bold;
+	color: #fff;
+}
+.sec-instruction {
+	font-size: 12px;
+	color: #fff;
+}
+
+/*Forms*/
+select.form-control,
+select > option,
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #0e76bc;
+    opacity: 1; /* Firefox */
+    font-size: 14px;
+    font-weight: bold;
+}
+.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #0e76bc;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.form-control::-ms-input-placeholder { /* Microsoft Edge */
+    color: #0e76bc;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.form-control {
+	border-radius: 0 !important;
+	font-size: 14px;
+	font-weight: bold;
+}
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-image: url("../images/dropdown.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+select::-ms-expand { 
+    display: none; 
+}
+.form-group {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-row-gap: 20px;
+	grid-column-gap: 10px;
+}
+@media only screen and (max-width: 767px) {
+    .form-group {
+    	grid-template-columns: 1fr;
+    }
+}
+.span1 {
+	grid-column: 1 / -1;
+}
+.form-add-terms {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+@media only screen and (max-width: 767px) {
+    .form-add-terms {
+    	grid-template-columns: 1fr;
+    }
+}
+
+/*Add Form Button*/
+.addform button {
+	background-color: #087ABB;
+	border-color: #087ABB;
+	height: 40px;
+	width: 40px;
+	font-size: 40px;
+	font-weight: bold;
+}
+.addform button span {
+	position: relative;
+	top: -17px;
+	left: -3px;
+}
+.addform {
+	color: #fff;
+	font-size: 14px;	
+}
+
+/*Terms and Conditons*/
+.terms {
+	justify-self: end;
+}
+.terms input {
+	transform: scale(1.5);
+	transform-origin: center top;
+}
+.terms a {
+	color: #fff;
+	font-size: 11px;	
+}
+.modal-body p {
+	font-size: 14px;
+}
+
+/*Submit Button*/
+.submit-btn {
+	font-size: 14px;
+	font-weight: bold;
+	padding: 8px 35px;
+}
+
+.errmsg {
+	font-weight: bold;
+	color: #C00000 !important;
+}
